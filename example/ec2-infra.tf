@@ -9,7 +9,8 @@ variable "ec2_public_key" {
 }
 
 module "aws-ec2" {
-  source   = "../"
+  source   = "navinds25/ec2-vpc-basic/aws"
+  #source = "../"
   vpc_cidr = "10.101.0.0/16"
   public_subnets = [
     {
